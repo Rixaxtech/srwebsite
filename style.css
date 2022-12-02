@@ -1,0 +1,603 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+header nav {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    background: #fff;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 64px;
+    align-items: center;
+    text-align: center;
+}
+
+header nav li {
+    list-style: none;
+    justify-content: center;
+    color: #001D5D;
+    text-decoration: none;
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+  }
+  
+  /* Navbar links */
+  /* #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  } */
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+#logoBlue {
+    width: 106px;
+    height: 40px;
+}
+
+header nav li img {
+    color: #001D5D;
+    margin-right: 12.7px;
+}
+
+header nav li a, header nav button a {
+    text-decoration: none;
+    color: #001D5D;
+}
+
+header nav button {
+    background: #D9F0D0;
+    width: 168px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 2px; */
+}
+
+header nav button a {
+    text-decoration: none;
+    color: #42A418;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+header nav button a:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #42A418;
+    border-radius: 2px;
+    color: #FFFFFF;
+}
+
+/* 
+#innerNav {
+    display: flex;
+    justify-content: space-around;
+} */
+
+#hero {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+    background-size: cover;
+    height: 656px;
+    color: #fff;
+}
+
+
+
+  
+
+#hero section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 234px;
+    padding-left: 150px;
+    width: 568px;
+    height: 168px;
+}
+
+#hero h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+#hero p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 42px;
+}
+
+#hero button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+#hero button img {
+    width: 20px;
+    height: 20px;
+    color: #001D5D;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+#hero button:hover {
+    background: #001D5D;
+
+}
+
+#hero span {
+    width: 484px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#artist {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: stretch;
+}
+
+#artist section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+#artist section:first-child {
+    margin-left: 50px;
+    margin-right: 32px;
+}
+
+#artist section img {
+    width: 569px;
+}
+
+#artist h2 {
+    width: 469px;
+    height: 96px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #001D5D;
+    margin-bottom: 32px;
+}
+
+#artist p {
+    width: 467px;
+    height: 240px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #777777;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#artist button {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 168px;
+    height: 48px;
+    background: #D9F0D0;
+    color: #42A418;
+    border: none;
+}
+
+#artist button:hover {
+    background: #42A418;
+    color: #FFFFFF;
+}
+
+#releases {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+}
+
+#releasesDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+    gap: 24px;
+}
+
+#releases h3 {
+    color: #001D5D;
+    width: 569px;
+    font-size: 40px;
+    width: 569px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    flex: none;
+    order: 0;
+}
+
+#releasesDetails p {
+    height: 52px;
+    width: 569px;
+    padding-top: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #777777;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-family: Arial;
+}
+
+.carouselList {
+    display: flex;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    perspective: 300px;
+  }
+
+.carouselItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 570px;
+    height: 324px;
+    /* border-radius: 12px; */
+    box-shadow: 0px 8px 44px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    transition: all .3s ease-in;
+}
+/* 
+.carouselItem:nth-child(1) {
+    background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
+  }
+.carouselItem:nth-child(2) {
+    background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
+  }
+.carouselItem:nth-child(3) {
+    background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
+  } */
+
+.carouselItem[data-pos="0"] {
+    z-index: 5;
+  } 
+  
+.carouselItem[data-pos="-1"],
+.carouselItem[data-pos="1"] {
+    opacity: 0.7;
+    filter: blur(1px) grayscale(10%);
+  }
+  
+.carouselItem[data-pos="-1"] {
+    transform: translateX(-40%) scale(.9);
+    z-index: 4;
+  }
+  
+.carouselItem[data-pos="1"] {
+    transform: translateX(40%) scale(.9);
+    z-index: 4;
+  }
+
+.card {
+    width: 570px;
+    height: 324px;
+    background: #FFFFFF;
+    margin-right: 32px;
+    display: flex;
+    justify-content: center;
+    padding-top: 68px;
+}
+
+.cardPic img {
+    width: 189px;
+    height: 188px;
+}
+
+.cardDetails {
+    height: 188px;
+    width: 307px;
+    padding-left: 23px;
+}
+
+.cardDetails h4 {
+    color: #001D5D;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 12px;
+}
+
+.cardDetails span {
+    width: 131px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #42A418;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.cardDetails p {
+    width: 307px;
+    height: 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    padding-top: 12px;
+}
+
+#releases section button {
+    width: 68px;
+    height: 68px;
+    background: #B8BFCF;
+    border-radius: 50%;
+    margin-top: 64px;
+    margin-bottom: 83px;
+}
+
+#releases button img {
+    color: #001D5D;
+}
+
+#releases button:hover {
+    background: #001D5D;
+}
+
+#releases button img:hover {
+    color: #FFFFFF;
+}
+
+#releases section button:first-child {
+    margin-right: 32px;
+}
+
+#map {
+    height: 544px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact h3 {
+    color: #001D5D;
+    width: 569px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#contact div p {
+    width: 468px;
+    height: 78px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #777777;
+}
+
+#contact section:first-of-type {
+    padding-top: 64px;
+    padding-left: 51px;
+}
+
+#textbox {
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+    background: #fff;
+    width: 568px;
+    height: 144px;
+    font-family: 'Inter';
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 568px;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+.form label, .form select {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #777777;
+text-align: left;
+}
+
+.form input {
+    color: #777777;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.form input:after {
+    color: #001D5D;
+}
+
+#contact button {
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 168px;
+    height: 48px;
+    background: #D9F0D0;
+    border-radius: 2px;
+    border: none;
+    color: #42A418;
+}
+
+#contact button:hover {
+    background: #42A418;
+    color: #FFFFFF;
+}
+
+#contactImg {
+    width: 519px;
+    height: 782px;
+    background: url(/Images/harry-swales-0l0KjNoAfAk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;    
+}
+
+button {
+    cursor: pointer;
+}
+
+footer {
+    background: #001D5D;
+    padding: 50px 70px;
+    color: #fff;
+}
+
+#footerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+}
+
+footer nav li {
+    list-style: none;
+    padding: 12px;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#lastNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lastNav section ul{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+#lastNav img {
+    color: #fff;
+}
