@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <title>Synder Recordings | Homepage</title>
 </head>
 <body>
@@ -48,53 +50,51 @@
             <h3>New Releases</h3>
             <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
         </section>
-        <section id="carousel">
-            <ul class="carouselList">
-                <li class="carouselItem" data-pos="-1">
-                    <div class="card">
-                        <section class="cardPic">
-                            <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
-                        </section>
-                        <section class="cardDetails">
-                            <h4>Trapsoul</h4>
-                            <span>Bryson Tiller</span>
-                            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
-                        </section>
-                    </div>
-                </li>
-                <li class="carouselItem" data-pos="0">
-                    <div class="card">
-                        <section class="cardPic">
-                            <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
-                        </section>
-                        <section class="cardDetails">
-                            <h4>Trapsoul</h4>
-                            <span>Bryson Tiller</span>
-                            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
-                        </section>
-                    </div>
-                </li>
-                <li class="carouselItem" data-pos="1">
-                    <div class="card">
-                        <section class="cardPic">
-                            <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
-                        </section>
-                        <section class="cardDetails">
-                            <h4>Trapsoul</h4>
-                            <span>Bryson Tiller</span>
-                            <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
-                        </section>
-                    </div>
-                </li>
-            </ul>  
-            
-            
-            
-        </section>
-        <section>
-            <button><img src="/Images/Icons/Basic Icons/Arrows Button Left.svg" alt="left"></button>
-            <button><img src="/Images/Icons/Basic Icons/Arrows Button Right.svg" alt="right"></button>
-        </section>
+        <div class="slider-container">
+            <div class="slider">
+              <div class="card" data-pos="-1">
+                <section class="cardInfo">
+                <section class="cardPic">
+                    <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
+                </section>
+                <section class="cardDetails">
+                    <h4>Trapsoul</h4>
+                    <span>Bryson Tiller</span>
+                    <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+                </section>
+                </section>
+              </div>
+              <div class="card" data-pos="0">
+                <section class="cardInfo">
+                <section class="cardPic">
+                    <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
+                </section>
+                <section class="cardDetails">
+                    <h4>Trapsoul 1</h4>
+                    <span>Bryson Tiller</span>
+                    <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+                </section>
+                </section>
+              </div>
+              <div class="card" data-pos="1">
+                <section class="cardInfo">
+                    <section class="cardPic">
+                        <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
+                    </section>
+                    <section class="cardDetails">
+                        <h4>Trapsoul</h4>
+                        <span>Bryson Tiller</span>
+                        <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
+                    </section>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <button class="slider-btn left-btn"><img src="/Images/Icons/Basic Icons/Arrows Button Left.svg" alt="left" id="left-button"></button>
+            <button class="slider-btn right-btn"><img src="/Images/Icons/Basic Icons/Arrows Button Right.svg" alt="right" id="right-button"></button>
+          </div>
+                    
     </section>
     <section id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.2294341961046!2d-94.67061174911309!3d38.987259749147015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0eb66d3f79dd9%3A0xa7a51cba69767a7e!2sLifted%20Logic!5e0!3m2!1sen!2sus!4v1669961729915!5m2!1sen!2sus" width="100%" height="545" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
