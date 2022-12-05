@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     height: 100vh;
 }
@@ -42,17 +43,7 @@ header nav li {
     overflow: hidden;
   }
   
-  /* Navbar links */
-  /* #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  } */
-  
-  /* Page content */
+/* Page content */
   .content {
     padding: 0px;
   }
@@ -62,6 +53,7 @@ header nav li {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -122,13 +114,31 @@ header nav button a:hover {
 } */
 
 #hero {
+
+    position: absolute;
+    color: #fff;
+    
+}
+
+.heroImg {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
     background-size: cover;
     height: 656px;
-    color: #fff;
-    /* transform: scale(1.1); */
-    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    
+    animation: zoom 10s linear infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 
@@ -144,6 +154,12 @@ header nav button a:hover {
     padding-left: 150px;
     width: 568px;
     height: 168px;
+    padding: 0px 150px;
+    gap: 24px;
+    width: 1270px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
 }
 
 #hero h1 {
@@ -155,13 +171,18 @@ header nav button a:hover {
 }
 
 #hero p {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 24px;
-    margin-bottom: 42px;
+    width: 567px;
+height: 72px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+flex: none;
+order: 1;
+flex-grow: 0;
 }
 
 #hero button {
@@ -184,6 +205,8 @@ header nav button a:hover {
 
 #hero button:hover {
     background: #001D5D;
+    color: #fff;
+    fill: #fff;
 
 }
 
@@ -208,19 +231,32 @@ header nav button a:hover {
     align-items: stretch;
 }
 
-#artist section {
+#artist {
     padding-top: 128px;
     padding-bottom: 128px;
 }
 
 #artist section:first-child {
-    margin-left: 50px;
-    margin-right: 32px;
+
 }
 
-#artist section img {
-    width: 569px;
+#artist img {
+    max-width: 569px;
 }
+
+.artistContainer {
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+    margin-left: 50px;
+    margin-right: 32px;
+  }
+  
+  .right {
+    flex: 1;
+  }
 
 #artist h2 {
     width: 469px;
@@ -320,8 +356,8 @@ header nav button a:hover {
     flex-grow: 0;
 }
 
-.card[data-pos="0"] {
-    z-index: 5;
+/* .card[data-pos="0"] {
+    z-index: .5;
   } 
   
 .card[data-pos="-1"],
@@ -338,7 +374,7 @@ header nav button a:hover {
 .card[data-pos="1"] {
     transform: translateX(40%) scale(.9);
     z-index: 4;
-  }
+  } */
 
 /*  */
 .slider-container {
@@ -348,14 +384,12 @@ header nav button a:hover {
     width: 100%;
     height: 100%;
     align-items: center;
-    font-family: Arial;
   }
   
   .slider {
     display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
+    /* left: 0;
+    top: 0; */
     transition: left 0.5s;
     display: flex;
     list-style: none;
@@ -389,10 +423,10 @@ header nav button a:hover {
     flex: 1;
     }
       
-    .container {
-        position: relative;
-        overflow: hidden;
-      } 
+/* .container {
+    position: relative;
+    overflow: hidden;
+}  */
   
 .cardInfo {
     display: flex;
@@ -529,6 +563,7 @@ header nav button a:hover {
     max-width: 568px;
     gap: 1rem;
     margin-top: 2.5rem;
+    /* align-items: stretch; */
   }
 
 .form label, .form select {
@@ -616,8 +651,9 @@ footer nav li a {
     color: #fff;
 }
 
-#lastNav img {
+#lastNav ul li a img {
     color: #fff;
+    fill: #fff;
 }
 
 #footerNav nav ul li:first-child {
