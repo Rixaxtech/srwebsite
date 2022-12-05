@@ -13,16 +13,26 @@
 </head>
 <body>
     <header>
-        <nav id='navbar'>
-            <ul>
-              <li><a href='http://'><img id="logoBlue" src="/Images/Logos/Logo-Blue.svg" alt="company logo"></a></li>
-              <li><a href='http://'><img src="/Images/Icons/Nav Icons/Home.svg">Home</a></li>
-              <li><a href='http://'><img src="/Images/Icons/Nav Icons/Record.svg">Records</a></li>
-              <li><a href='http://'><img src="/Images/Icons/Nav Icons/Music Note.svg">Music</a></li>
-              <li><a href='http://'><img src="/Images/Icons/Nav Icons/People.svg">Artists</a></li>
-              <li><a href='http://'><img src="/Images/Icons/Nav Icons/Calendar.svg">Concerts</a></li>
-              <li><button><a href="">Sign Up</a></button></li>
-            </ul>
+
+        <nav id='navbar' class="navbar">
+            <div class="brand-title">
+                <img id="logoBlue" src="/Images/Logos/Logo-Blue.svg" alt="company logo">
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href='http://'><img src="/Images/Icons/Nav Icons/Home.svg">Home</a></li>
+                    <li><a href='http://'><img src="/Images/Icons/Nav Icons/Record.svg">Records</a></li>
+                    <li><a href='http://'><img src="/Images/Icons/Nav Icons/Music Note.svg">Music</a></li>
+                    <li><a href='http://'><img src="/Images/Icons/Nav Icons/People.svg">Artists</a></li>
+                    <li><a href='http://'><img src="/Images/Icons/Nav Icons/Calendar.svg">Concerts</a></li>
+                    <li><button><a href="">Sign Up</a></button></li>
+                </ul>
+            </div>
           </nav>
     </header>
     <div class="content">
@@ -76,7 +86,7 @@
                     <img src="/Images/71RLkNIuZNL._SY355_.jpg" alt="artist pic">
                 </section>
                 <section class="cardDetails">
-                    <h4>Trapsoul 1</h4>
+                    <h4>Trapsoul</h4>
                     <span>Bryson Tiller</span>
                     <p>Bryson Djuan Tiller, is an American singer, songwriter and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape titled Killer Instinct Vol.1.</p>
                 </section>
@@ -110,24 +120,26 @@
             <h3>Get In Touch</h3>
             <div><p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify.</p>
             </div>
-
+            <div class="formContainer">
             <form action="#" class="form">
             <span>
+            
             <label for="firstName">First Name</label><br>
             <input type="text" placeholder="First Name" name="First Name" id="firstName">
-            <label for="lastName">Last Name</label>
-            <input type="text" placeholder="Last Name" name="Last Name" id="lastName">
+            <span><label for="lastName">Last Name</label>
+            <input type="text" placeholder="Last Name" name="Last Name" id="lastName"></span>
             </span>
             <span>
             <label for="email">Email Address</label><br>
             <input type="email" name="email" id="email" placeholder="Email Address">
-            <label for="reasons">Reason for Contacting</label>
+            <span><label for="reasons">Reason for Contacting</label>
             <select name="reasons" id="reasons">
                 <option value="volvo">Select One</option>
                 <option value="reason1">1</option>
                 <option value="reason2">2</option>
                 <option value="reason3">3</option>
             </select>
+            </span>
         </span>
             <span>
             <label for="textbox">Message (Optional)</label>
@@ -137,7 +149,7 @@
             </span>
             <button>Learn More</button>
             </form>
-            
+            </div>
         </section>
         <section id="contactImg">
         </section>
