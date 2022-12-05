@@ -13,6 +13,8 @@ body {
     font-family: 'Inter', sans-serif;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header nav {
@@ -42,7 +44,7 @@ header nav li {
 #navbar {
     overflow: hidden;
   }
-  
+
 /* Page content */
   .content {
     padding: 0px;
@@ -559,8 +561,13 @@ flex-grow: 0;
     max-width: 568px;
     gap: 1rem;
     margin-top: 2.5rem;
+    align-items: stretch;
     /* align-items: stretch; */
   }
+
+.form div {
+    align-items: stretch;
+}
 
 .form label, .form select {
 font-family: 'Inter';
@@ -655,3 +662,46 @@ footer nav li a {
 #footerNav nav ul li:first-child {
     text-transform: uppercase;
 }
+
+
+@media only screen and (max-width: 320px) {
+    /* Styles for browsers with a width smaller than 320px go here */
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    /* Styles for browsers with a width between 321px and 375px go here */
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 376px) and (max-width: 425px) {
+    /* Styles for browsers with a width between 376px and 425px go here */
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* Styles for browsers with a width between 426px and 768px go here */
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for browsers with a width between 769px and 1024px go here */
+    body {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Styles for browsers with a width greater than 1025px go here */
+    body {
+      width: 100%;
+    }
+  }
